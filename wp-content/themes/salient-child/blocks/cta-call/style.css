@@ -1,0 +1,94 @@
+.wp-block-pwire-cta-call .call-cta-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+div:not(.landing-header) > .wp-block-pwire-cta-call {
+	margin-top: var(--wp--style--block-gap-medium, 25px);
+}
+
+.wp-block-pwire-cta-call .call-cta-inner .contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+.wp-block-pwire-cta-call .call-cta-inner.style-header .contacts {
+	align-items: flex-end;
+}
+
+.wp-block-pwire-cta-call .call-cta-inner .wp-block-button.button_phone {
+	display: block;
+}
+
+.wp-block-pwire-cta-call .call-cta-inner.style-header .wp-block-button.button_scroll {
+	display: none;
+}
+.wp-block-pwire-cta-call .call-cta-inner:not(.style-header) .wp-block-button.button_scroll {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wp-block-pwire-cta-call .call-cta-inner .cta-text {
+	display: none;
+	font-size: 15px;
+}
+.wp-block-pwire-cta-call .call-cta-inner.style-header .cta-text {
+	display: block;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: right;
+}
+@media screen and (min-width: 375px) {
+
+	/*.wp-block-pwire-cta-call .call-cta-inner.style-header .cta-text {*/
+	/*	font-size: 11px;*/
+	/*}*/
+}
+@media screen and (min-width: 414px) {
+
+	.wp-block-pwire-cta-call .call-cta-inner .contacts {
+		align-items: center;
+	}
+	.wp-block-pwire-cta-call .call-cta-inner.style-header .cta-text {
+		font-size: 13px;
+		text-align: center;
+	}
+}
+@media screen and (min-width: 800px) {
+
+	.wp-block-pwire-cta-call .call-cta-inner {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+	}
+	.wp-block-pwire-cta-call .call-cta-inner.style-header {
+		flex-direction: row-reverse;
+		justify-content: flex-start;
+		align-items: flex-end;
+	}
+	.wp-block-pwire-cta-call .call-cta-inner .cta-text {
+		display: block;
+	}
+	.wp-block-pwire-cta-call .call-cta-inner.style-header .cta-text {
+		font-size: 14px;
+	}
+	.wp-block-pwire-cta-call .call-cta-inner .wp-block-button.button_phone a {
+		font-size: var(--wp--preset--font-size--gigantic, clamp(2.125rem, 4.4vw, 2.75rem));
+		font-weight: 300;
+		line-height: 1;
+		color: var(--wp--preset--color--primary, #1b5c7d);
+		background-color: transparent;
+		padding: 0;
+	}
+	.wp-block-pwire-cta-call .call-cta-inner:not(.style-header) .wp-block-button.button_phone a {
+		color: currentColor;
+	}
+	.wp-block-pwire-cta-call .call-cta-inner.style-header .wp-block-button.button_scroll {
+		display: block;
+	}
+}

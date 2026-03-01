@@ -1,0 +1,7 @@
+.wp-block-pwire-cta-call .call-cta-inner .wp-block-button.button_phone .wp-block-button__link {
+	pointer-events: none;
+}
+.wp-block-pwire-cta-call .call-cta-inner .wp-block-button.button_scroll .wp-block-button__link {
+	color: #fff;
+	pointer-events: none;
+}
